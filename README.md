@@ -1,8 +1,6 @@
 # Immanuel Bayu Agustinus
 ##
-Pada ulangan praktikum ini saya telah membuat sebuah website yang bertemakan kuliner, dan saya membuat nya dengan react js vite yang teritegrasikan oleh api yang saya buat sendiri yang dimana datanya saya ambil dari google / internet.
-
-dan saya telah membuat design yang simple dan semua metode dari CRUD telah berjalan dengan baik, dan sudah saya test.
+Pada praktikum ini saya telah membuat sebuah website yang bertemakan kuliner, dan saya membuat nya dengan react js yang terintegrasikan oleh api yang saya buat sendiri. Saya telah membuat design yang simple dan semua fitur CRUD telah berjalan dengan baik, dan sudah saya test.
 
 # Getting Started with Create React App
 
