@@ -1,0 +1,124 @@
+.form {
+    --input-focus: #2d8cf0;
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: beige;
+    --main-color: black;
+    padding: 20px;
+    background: rgb(241, 168, 112);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    /* width: 500px; */
+    height: 100vh;
+    align-items: center;
+
+}
+
+.title {
+    color: var(--font-color);
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.title span {
+    color: var(--font-color-sub);
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.input {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 5px 10px;
+    outline: none;
+    transition: .2s linear;
+}
+
+.input::placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+}
+
+.input:focus {
+    border: 2px solid var(--input-focus);
+}
+
+.login-with {
+    display: flex;
+    gap: 20px;
+}
+
+
+.button-confirm:active {
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
+}
+
+.button-confirm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em 0em 1em 1em;
+    background-color: beige;
+    box-shadow: 4px 6px 0px black;
+    border: 4px solid;
+    color: black;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+    transition: box-shadow 250ms, transform 250ms, filter 50ms;
+}
+
+.button-confirm:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 3px 0px black;
+}
+
+.button-confirm:active {
+    filter: saturate(0.75);
+}
+
+.button-confirm::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgb(241, 168, 112);
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: transform 250ms;
+}
+
+.button-confirm:hover::after {
+    transform: translateX(0);
+}
+
+.button-confirm:hover .bgContainer>span {
+    transform: translateX(0);
+}
+
+.button-confirm:hover {
+    transform: translateX(0);
+}
+
+.button-confirm:hover {
+    transform: translateX(5px);
+}
+
+.button-confirm:active {
+    transform: translateX(8px);
+}
