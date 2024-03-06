@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../styles/Menu.css"
 
 
 function MenuItem({ item, onEdit, onDelete }) {
@@ -18,11 +19,11 @@ function MenuItem({ item, onEdit, onDelete }) {
             <h1> {item.name} </h1>
             <p>{item.description.substring(0, 60) + "..."}</p>
             <p> ${item.price} </p>
-            <button onClick={() => handleEditClick(item)}>
+            <button type="button" className="edit" onClick={() => handleEditClick(item)} >
                 <span></span>
                 Edit
             </button>
-            <button onClick={() => (window.confirm("Are you sure?") ? onDelete(item.id) : null)}>
+            <button type="button" className="delete" onClick={() => (window.confirm("Are you sure?") ? onDelete(item.id) : null)}>
                 <span></span>
                 Delete
             </button>

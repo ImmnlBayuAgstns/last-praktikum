@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   height: auto;
-  background-color: #121619;
+  background-color: rgb(241, 168, 112);
   display: flex;
   flex-direction: column;
 }
@@ -9,9 +9,9 @@
 .footer .secTop {
   display: flex;
   justify-content: space-between;
-  color: white;
+  color: rgb(0, 0, 0);
   flex-direction: row;
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid rgb(0, 0, 0);
 }
 
 .footer .secTop p {
@@ -25,7 +25,7 @@
 
 
 .socialMedia svg {
-  color: white;
+  color: rgb(0, 0, 0);
   margin: 15px;
   font-size: 20px;
   cursor: pointer;
@@ -35,6 +35,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #121619;
-  color: white;
+  background-color: rgb(241, 168, 112);
+  color: rgb(0, 0, 0);
 }

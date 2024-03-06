@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import menuAPI from './menuAPI'
+import { menuAPI } from './apiHandler/API.jsx'
+import Footer from './Footer'
+import "../styles/Menu.css"
 
 
 const CreateMenu = () => {
@@ -23,7 +25,7 @@ const CreateMenu = () => {
         const { name, image, description, price } = formRef.current;
 
         if (name.value.length < 4) return;
-        if (image.value.length < 30) return;
+        if (image.value.length === 0) return;
         if (description.value.length === 0) return;
         if (price.value.length === 0) return;
 
@@ -48,29 +50,32 @@ const CreateMenu = () => {
 
     return (
         //CREATE FORM
-        <div style={{ height: "100vh" }}>
-            <form action="" ref={formRef}>
-                <label htmlFor="name">Name</label>
-                <input type="text" name="name" placeholder='must 3 character or more' defaultValue={""} required />
-                <label htmlFor="description">Description</label>
-                <textarea name="description" placeholder="needed character" cols="30" rows="10" defaultValue={""} required></textarea>
-                <label htmlFor="image">Image</label>
-                <textarea name="image" placeholder="Image URL" cols="30" rows="10" ></textarea>
-                <label htmlFor="price">Price</label>
-                <input type="text" name="price" placeholder='Enter Price' />
-                <div>
-                    <button className="" onClick={submit}>
-                        Sumbit
-                    </button>
-                    <span />
-                    <Link to="/menu">
-                        <button type="button">
-                            Cancel
+        <>
+            <div style={{ height: "100vh" }}>
+                <form action="" ref={formRef}>
+                    <label htmlFor="name">Name</label>
+                    <input type="text" name="name" placeholder='must 3 character or more' defaultValue={""} required />
+                    <label htmlFor="description">Description</label>
+                    <textarea name="description" placeholder="needed character" cols="30" rows="10" defaultValue={""} required></textarea>
+                    <label htmlFor="image">Image</label>
+                    <textarea name="image" placeholder="Image URL" cols="30" rows="10" ></textarea>
+                    <label htmlFor="price">Price</label>
+                    <input type="text" name="price" placeholder='Enter Price' />
+                    <div>
+                        <button className="submitCreate" onClick={submit}>
+                            Sumbit
                         </button>
-                    </Link>
-                </div>
-            </form>
-        </div>
+                        <span />
+                        <Link to="/menu">
+                            <button type="button" className='cancelCreate'>
+                                Cancel
+                            </button>
+                        </Link>
+                    </div>
+                </form>
+            </div>
+            <Footer />
+        </>
     )
 }
 

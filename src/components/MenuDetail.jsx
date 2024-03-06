@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import menuAPI from "./menuAPI";
+import { menuAPI } from "./apiHandler/API.jsx";
+import "../styles/Menu.css"
 
 function MenuDetail() {
     const [data, setData] = useState()
@@ -17,19 +18,21 @@ function MenuDetail() {
 
     return (
         //MENU CARD BY ID
-        <div className="menuItem">
-            <div style={{ backgroundImage: `url(${data.image})` }}> </div>
-            <h1> {data.name} </h1>
-            <p>{data.description}</p>
-            <p> ${data.price} </p>
+        <div className="menuItemBg">
+            <div className="menuItem">
+                <div style={{ backgroundImage: `url(${data.image})` }}> </div>
+                <h1> {data.name} </h1>
+                <p>{data.description}</p>
+                <p> ${data.price} </p>
 
-            {/* LINKED INTO MENU PAGES */}
-            <Link to={"/menu"}>
-                <button >
-                    <span></span>
-                    Back
-                </button>
-            </Link>
+                {/* LINKED INTO MENU PAGES */}
+                <Link to={"/menu"}>
+                    <button className="back">
+                        <span></span>
+                        Back
+                    </button>
+                </Link>
+            </div>
         </div>
     )
 }

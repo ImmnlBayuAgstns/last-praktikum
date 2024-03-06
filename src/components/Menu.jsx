@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import MenuItem from "../components/MenuItem";
 import "../styles/Menu.css";
-import menuAPI from "./menuAPI.jsx";
+import { menuAPI } from "./apiHandler/API.jsx";
 import MenuForm from "./MenuForm.jsx";
 
 function Menu({ projects, onSave, setProject }) {
     const [allData, setAllData] = useState([])
     const [projectBeingEdited, setProjectBeingEdited] = useState({})
+    const [search, setSearch] = useState("")
+    const [sort, setSort] = useState("")
 
     //EDIT HANDLER FOR POPPING THE DATA INTO EDIT FORM
     const editHandling = (project) => {
@@ -25,20 +27,35 @@ function Menu({ projects, onSave, setProject }) {
         window.location = "/menu"
     }
 
+    const sorting = (a, b) => {
+        if (sort === "asceding") return a.name.localeCompare(b.name)
+        else if (sort === "descading") return b.name.localeCompare(a.name)
+    }
+
     return (
         //MENU PAGE SECTION
         <div className="menu">
             <h1 className="menuTitle">Menus</h1>
+            <div className="input">
+                <input type="text" className="search" placeholder="Search.." onChange={(e) => setSearch(e.target.value)} />
+                <select onChange={(e) => setSort(e.target.value)} className="selectSort">
+                    <option value="asceding">A - Z</option>
+                    <option value="descading">Z - A</option>
+                </select>
+            </div>
             <div className="menuList">
-                {projects?.map((item, i) => (
-                    <div key={i}>
-                        {item === projectBeingEdited ? (
-                            <MenuForm onSave={onSave} onCancel={cancelEditHandling} project={item} projects={projects} setProject={setProject} />
-                        ) : (
-                            <MenuItem item={item} onEdit={editHandling} onDelete={deleteHandling} />
-                        )}
-                    </div>
-                ))}
+                {projects
+                    .filter(item => item.name.toLowerCase().indexOf(search) > -1)
+                    .sort((a, b) => sorting(a, b))
+                    .map((item, i) => (
+                        <div key={i}>
+                            {item === projectBeingEdited ? (
+                                <MenuForm onSave={onSave} onCancel={cancelEditHandling} project={item} projects={projects} setProject={setProject} />
+                            ) : (
+                                <MenuItem item={item} onEdit={editHandling} onDelete={deleteHandling} />
+                            )}
+                        </div>
+                    ))}
             </div>
         </div>
     );

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Menus from "./MenuList";
+import "../styles/Menu.css"
 
 const MenuForm = ({ onSave, onCancel, project: initialProject }) => {
     const [project, setProject] = useState(initialProject)
@@ -78,11 +79,11 @@ const MenuForm = ({ onSave, onCancel, project: initialProject }) => {
                 <label htmlFor="price">Price</label>
                 <input type="text" name="price" placeholder='Enter Price' defaultValue={project.price} onChange={changeHandling} />
                 <div>
-                    <button>
+                    <button className="save">
                         Save
                     </button>
                     <span />
-                    <button type="button" onClick={onCancel} >
+                    <button type="button" className="cancel" onClick={onCancel} >
                         Cancel
                     </button>
                 </div>

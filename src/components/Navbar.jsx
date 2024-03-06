@@ -6,6 +6,7 @@ import "../styles/Navbar.css";
 
 function Navbar() {
     const [openLinks, setOpenLinks] = useState(false);
+    const username = localStorage.getItem("username")
 
     const toggleNavbar = () => {
         setOpenLinks(!openLinks);
@@ -21,6 +22,9 @@ function Navbar() {
                     <Link to="/about"> About </Link>
                     <Link to="/contact"> Contact </Link>
                     <Link to="/createmenu"> Create</Link>
+                    <ul>
+                        <li>{username ? <a href="/dashboard">{username}</a> : <a href="/login">Login</a>}</li>
+                    </ul>
                 </div>
             </div>
             <div className="rightSide">
@@ -29,6 +33,8 @@ function Navbar() {
                 <Link to="/about"> About </Link>
                 <Link to="/contact"> Contact </Link>
                 <Link to="/createmenu"> Create</Link>
+                <li style={{ listStyleType: "none" }}>{username === "admin" ? <a href="/dashboard">{username}</a> : <a href="/">{username}</a>}</li>
+                <Link to="/logout">Logout</Link>
                 <button onClick={toggleNavbar}>
                     <ReorderIcon />
                 </button>

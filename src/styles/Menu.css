@@ -5,6 +5,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 0px;
+  background-color: beige;
 }
 
 .menu .menuTitle {
@@ -25,11 +27,19 @@
 
 /* MENU ITEM STYLING */
 
+.menuItemBg {
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .menuItem {
   border-radius: 15px;
   width: 300px;
   height: auto;
   margin: 45px;
+  background-color: beige;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -69,7 +79,13 @@
 
 /* BUTTON  */
 
-button {
+.edit,
+.delete,
+.save,
+.cancel,
+.submitCreate,
+.cancelCreate,
+.back {
   background-color: black;
   border: none;
   color: white;
@@ -80,4 +96,68 @@ button {
   margin-bottom: 30px;
   align-items: center;
   cursor: pointer;
+}
+
+
+
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input:focus {
+  outline: none;
+  border: 0.5px solid black;
+  box-shadow: -5px -5px 0px black;
+}
+
+.search {
+  height: 20px;
+  background-color: beige;
+  position: relative;
+  padding: 10px;
+  transition: .2s linear;
+  border: 2.5px solid black;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.search:focus {
+  outline: none;
+  border: 0.5px solid black;
+  box-shadow: -5px -5px 0px black;
+}
+
+
+/* @keyframes anim {
+
+  0%,
+  100% {
+    transform: translateY(calc(-50% - 5px)) scale(1);
+  }
+
+  50% {
+    transform: translateY(calc(-50% - 5px)) scale(1.1);
+  }
+} */
+
+.selectSort {
+  width: 300px;
+  height: 44px;
+  background-color: beige;
+  position: relative;
+  padding: 10px;
+  transition: .2s linear;
+  border: 2.5px solid black;
+  /* border-left: 1px; */
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.selectSort:focus {
+  outline: none;
+  border: 0.5px solid black;
+  box-shadow: 5px -5px 0px black;
 }

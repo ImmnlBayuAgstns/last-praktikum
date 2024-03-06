@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import Menu from './Menu'
-import menuAPI from './menuAPI'
+import { menuAPI } from './apiHandler/API.jsx'
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 const MenuPage = () => {
     const [projects, setProjects] = useState([]);
@@ -22,7 +24,9 @@ const MenuPage = () => {
     }
     return (
         <div>
+            <Navbar />
             <Menu onSave={saveProject} projects={projects} setProjects={setProjects} />
+            <Footer />
         </div>
     )
 }
