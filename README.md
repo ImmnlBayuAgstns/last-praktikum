@@ -78,30 +78,31 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 ##
-PREVIEW
+##PREVIEW
 ##
 LOGIN PAGE
 ##
 ![screenshot-1709737741371](https://github.com/ImmnlBayuAgstns/last-praktikum/assets/112744859/25e31c74-6f52-418e-9199-751ca3ced518)
-HOMEPAGE
+HOME PAGE
 ##
-![screenshot-1709291822638](https://github.com/ImmnlBayuAgstns/last-praktikum/assets/112744859/40af8924-913c-473b-8cf5-d56c9c7d89f3)
+![screenshot-1709737767252](https://github.com/ImmnlBayuAgstns/last-praktikum/assets/112744859/91ea406b-7146-4917-b6be-c10035731614)
 ##
-MENUPAGE
+MENU PAGE
 ##
-![screenshot-1709291853911](https://github.com/ImmnlBayuAgstns/last-praktikum/assets/112744859/8631d136-0048-4d8f-b88b-505fc9f79457)
+![screenshot-1709737783736](https://github.com/ImmnlBayuAgstns/last-praktikum/assets/112744859/2a5edef6-efc3-4558-929e-769f3c5a2068)
 ##
-ABOUTPAGE
+ABOUT PAGE
 ##
-![screenshot-1709291871326](https://github.com/ImmnlBayuAgstns/last-praktikum/assets/112744859/8afccbf3-9c16-49bd-9708-deb3da77d72f)
+![screenshot-1709737800086](https://github.com/ImmnlBayuAgstns/last-praktikum/assets/112744859/384ea67f-7434-4b13-8b60-71c5dd592834)
 ##
-CONTACTPAGE
+CONTACT PAGE
 ##
-![screenshot-1709291886841](https://github.com/ImmnlBayuAgstns/last-praktikum/assets/112744859/9a63a8f7-bbcc-4a92-bc31-d29bdeff4c32)
+![screenshot-1709737811429](https://github.com/ImmnlBayuAgstns/last-praktikum/assets/112744859/bca0bb94-ffad-4cd4-a311-5fb8d5912140)
 ##
-CREATEPAGE
+CREATE PAGE
 ##
-![screenshot-1709291915710](https://github.com/ImmnlBayuAgstns/last-praktikum/assets/112744859/8cdf9708-f30d-49e7-bc48-7894c7b06c2a)
+![screenshot-1709737824221](https://github.com/ImmnlBayuAgstns/last-praktikum/assets/112744859/274c1cc9-081e-4456-9540-a93afc8b5905)
+
 
 
 
