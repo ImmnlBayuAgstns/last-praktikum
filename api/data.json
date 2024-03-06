@@ -8,7 +8,7 @@
       "id": "1"
     },
     {
-      "name": "Margherita Pizzaa",
+      "name": "Margherita Pizza",
       "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores nostrum dignissimos quae dolorem maiores deserunt similique ipsa a hic, odit molestias sit placeat ipsum voluptatem vitae aspernatur necessitatibus pariatur iure? Error tenetur quisquam fuga soluta reiciendis sapiente eos voluptatum debitis. Perferendis nemo quos quae. Ullam molestias esse aliquid. Consectetur modi at sit eius, molestiae impedit, dignissimos similique cumque fugit optio qui labore tenetur, magnam assumenda. Recusandae soluta modi officia veniam, dignissimos hic enim voluptate molestias? Porro excepturi, delectus nam saepe non voluptatem voluptatum aliquam quae ad amet tempore corporis minus ipsa recusandae, exercitationem similique possimus nesciunt sint soluta maxime aspernatur.",
       "image": "https://media.istockphoto.com/photos/margherita-pizza-on-wooden-background-close-up-picture-id1255499560?k=6&m=1255499560&s=170667a&w=0&h=80p7oBqUytDHbPJe_LYdOO3cPnFVk3mJv0xPo_GVF9M=",
       "price": "13.99",
@@ -41,13 +41,6 @@
       "image": "https://images.alphacoders.com/991/thumb-1920-991307.jpg",
       "price": "1289.70",
       "id": "6"
-    },
-    {
-      "name": "Cheese Pizzaa",
-      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores nostrum dignissimos quae dolorem maiores deserunt similique ipsa a hic, odit molestias sit placeat ipsum voluptatem vitae aspernatur necessitatibus pariatur iure? Error tenetur quisquam fuga soluta reiciendis sapiente eos voluptatum debitis. Perferendis nemo quos quae. Ullam molestias esse aliquid. Consectetur modi at sit eius, molestiae impedit, dignissimos similique cumque fugit optio qui labore tenetur, magnam assumenda. Recusandae soluta modi officia veniam, dignissimos hic enim voluptate molestias? Porro excepturi, delectus nam saepe non voluptatem voluptatum aliquam quae ad amet tempore corporis minus ipsa recusandae, exercitationem similique possimus nesciunt sint soluta maxime aspernatur.",
-      "image": "https://www.thedailymeal.com/sites/default/files/2017/02/24/23ChuckECheese_0.jpg",
-      "price": "21.99",
-      "id": "7"
     }
   ],
   "user": [

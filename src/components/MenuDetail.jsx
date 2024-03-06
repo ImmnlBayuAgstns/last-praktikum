@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { menuAPI } from "./apiHandler/API.jsx";
 import "../styles/Menu.css"
 
-function MenuDetail() {
+const MenuDetail = () => {
     const [data, setData] = useState()
     const { id } = useParams()
 

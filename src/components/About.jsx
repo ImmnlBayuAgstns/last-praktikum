@@ -4,7 +4,7 @@ import "../styles/About.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
-function About() {
+const About = () => {
     return (
         <>
             <Navbar />

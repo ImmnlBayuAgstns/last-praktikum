@@ -4,7 +4,7 @@ import axios from "axios";
 const url = "http://localhost:5000/menu"
 const userURL = "http://localhost:5000/user"
 
-//HTTP REQUEST AND RESPONSES HANDLER
+//API HANDLER FOR MENU
 const menuAPI = {
     async get() {
         return axios
@@ -38,6 +38,8 @@ const menuAPI = {
     }
 }
 
+
+//API HANDLER FOR LOGIN
 const userAPI = {
     async get() {
         return axios

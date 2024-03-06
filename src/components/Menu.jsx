@@ -4,7 +4,7 @@ import "../styles/Menu.css";
 import { menuAPI } from "./apiHandler/API.jsx";
 import MenuForm from "./MenuForm.jsx";
 
-function Menu({ projects, onSave, setProject }) {
+const Menu = ({ projects, onSave, setProject }) => {
     const [allData, setAllData] = useState([])
     const [projectBeingEdited, setProjectBeingEdited] = useState({})
     const [search, setSearch] = useState("")
@@ -27,6 +27,7 @@ function Menu({ projects, onSave, setProject }) {
         window.location = "/menu"
     }
 
+    //SORTING HANDLER
     const sorting = (a, b) => {
         if (sort === "asceding") return a.name.localeCompare(b.name)
         else if (sort === "descading") return b.name.localeCompare(a.name)
@@ -36,6 +37,7 @@ function Menu({ projects, onSave, setProject }) {
         //MENU PAGE SECTION
         <div className="menu">
             <h1 className="menuTitle">Menus</h1>
+            {/* SORTING AND SEARCH BAR */}
             <div className="input">
                 <input type="text" className="search" placeholder="Search.." onChange={(e) => setSearch(e.target.value)} />
                 <select onChange={(e) => setSort(e.target.value)} className="selectSort">

@@ -8,6 +8,7 @@ const LoginProvider = ({ children }) => {
     const [username, setUsername] = useState("")
     const [uniqueId, setUniqueId] = useState("")
 
+    //CHECK CREDENTIAL AND MAKE IT INTO CONTEXT
     useEffect(() => {
         const checkCredential = async () => {
             const uniqueId = localStorage.getItem("unique_id")
@@ -28,6 +29,8 @@ const LoginProvider = ({ children }) => {
         }
         checkCredential()
     }, [])
+
+    //PROVIDE CONTEXT TO OTHER COMPONENTS
     return <LoginContexts.Provider value={{ islogin, uniqueId, username }}>{children}</LoginContexts.Provider>
 }
 

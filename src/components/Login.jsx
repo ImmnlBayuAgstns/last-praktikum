@@ -11,13 +11,16 @@ const Login = () => {
     const formRef = useRef();
     const navigate = useNavigate();
 
+    //GETIING USER DATA FROM API AND FILLED INTO STATE
     useEffect(() => {
         userAPI.get().then((res) => setAllData(res));
     }, []);
 
+
     const { username } = useContext(LoginContext)
     if (username) return "Wait a second";
 
+    //SUBMIT HANDLER FOR LOGIN
     const submit = (e) => {
         e.preventDefault()
 
@@ -28,6 +31,7 @@ const Login = () => {
         const matchUsername = allData.find((item) => item.username === username.value);
         const matchPassword = matchUsername?.password === password.value;
 
+        //CHECK ACCOOUNT WHETHER THEY REGISTERED OR NOT
         if (matchUsername && matchPassword) {
             localStorage.setItem("unique_id", matchUsername.id);
             localStorage.setItem("username", username.value);
@@ -38,6 +42,7 @@ const Login = () => {
         }
     }
     return (
+        //LOGIN FORM
         <div>
             <form action="" className='form' ref={formRef}>
                 <h1 className='title'>Login Form</h1>

@@ -5,7 +5,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import "../styles/Footer.css";
 
-function Footer() {
+const Footer = () => {
     return (
         <div className="footer">
             <section className="secTop">

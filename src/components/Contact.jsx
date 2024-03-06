@@ -4,7 +4,7 @@ import "../styles/Contact.css";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
-function Contact() {
+const Contact = () => {
     return (
         //CONTACT SECTION
         <>

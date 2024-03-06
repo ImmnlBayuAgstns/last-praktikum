@@ -3,6 +3,7 @@ import "../styles/Logout.css"
 
 const Loading = ({ item }) => {
     return (
+        //LAZY LOAD COMPONENTS
         <div className='parLoad'>
             <div class="loader">
                 <li class="ball"></li>

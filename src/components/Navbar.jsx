@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import ReorderIcon from '@mui/icons-material/Reorder';
 import "../styles/Navbar.css";
 
-function Navbar() {
+const Navbar = () => {
     const [openLinks, setOpenLinks] = useState(false);
     const username = localStorage.getItem("username")
 
@@ -22,6 +22,7 @@ function Navbar() {
                     <Link to="/about"> About </Link>
                     <Link to="/contact"> Contact </Link>
                     <Link to="/createmenu"> Create</Link>
+                    <Link to="/logout">Logout</Link>
                     <ul>
                         <li>{username ? <a href="/dashboard">{username}</a> : <a href="/login">Login</a>}</li>
                     </ul>
@@ -33,7 +34,6 @@ function Navbar() {
                 <Link to="/about"> About </Link>
                 <Link to="/contact"> Contact </Link>
                 <Link to="/createmenu"> Create</Link>
-                <li style={{ listStyleType: "none" }}>{username === "admin" ? <a href="/dashboard">{username}</a> : <a href="/">{username}</a>}</li>
                 <Link to="/logout">Logout</Link>
                 <button onClick={toggleNavbar}>
                     <ReorderIcon />

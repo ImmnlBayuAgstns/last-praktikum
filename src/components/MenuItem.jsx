@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/Menu.css"
 
 
-function MenuItem({ item, onEdit, onDelete }) {
+const MenuItem = ({ item, onEdit, onDelete }) => {
 
     //EDIT HANDLER BY CLICKING THE BUTTON
     const handleEditClick = (projectBeingEdited) => {

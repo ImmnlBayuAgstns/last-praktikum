@@ -36,7 +36,6 @@ const MenuForm = ({ onSave, onCancel, project: initialProject }) => {
 
         setProject((p) => {
             updateProject = new Menus({ ...p, ...change })
-            console.log(updateProject)
             return updateProject
         })
 

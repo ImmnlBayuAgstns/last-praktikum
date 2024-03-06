@@ -8,6 +8,7 @@ const Logout = () => {
 
     const { username } = useContext(LoginContext)
 
+    //DELAY LOGOUT TO GIVE IT TIME FOR LOCAL STORAGE TO CLEAN THE DATA
     useEffect(() => {
         setTimeout(() => {
             localStorage.clear()

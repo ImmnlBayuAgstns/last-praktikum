@@ -17,8 +17,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {/* <Navbar /> */}
-        {/* FOR SWITCHING THE PAGES */}
+        {/* ROUTER FOR SWITCHING THE PAGES */}
         <Routes>
           {localUsername ?
             <>
@@ -36,7 +35,6 @@ function App() {
             </>
           }
         </Routes>
-        {/* <Footer /> */}
       </Router>
     </div>
   );
